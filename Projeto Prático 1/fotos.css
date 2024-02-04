@@ -1,0 +1,53 @@
+.fotos {
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: #000;
+}
+
+.fotos #texto {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.fotos #texto h1 {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.fotos #texto h1 {
+    font-size: 5em;
+    color: #FC1717;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 0 5.5em;
+}
+
+.cards a {
+    margin: 8px;
+}
+
+.cards a img {
+    height: 270px;
+    width: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cards a:hover {
+    transform: scale(1.02);
+    transform: .5s;
+}
+
+@media (max-width: 640px) {
+    .jogos #texto h1 {
+        font-size: 200%;
+    }
+}

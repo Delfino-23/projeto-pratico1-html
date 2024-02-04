@@ -1,0 +1,209 @@
+/* 
+W3 Schools - documentação html, css, jvascript e etc
+W3 Schools Color picker - paleta de cores
+Developer Mozila.org - documentação html e css
+Adobe Color - paleta de cores
+Pinterest - Pegar ideias
+Fonts Google - tipos de fontes
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .4s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 200px;
+    height: 90px;
+}
+
+#banner {
+    background-color: #d21617;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner h1 {
+    color: #fff;
+    background: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 80px;
+}
+
+/* FORM DE CONTATO */
+
+.contato-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contato-form form {
+    background-color: #d21617;
+    border-radius: 10px;
+    width: 20rem;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputBox {
+    height: 45px;
+    width: 22em;
+    border: 1px solid #000;
+    background: #c7c7c7;
+    border-radius: 5px; 
+    margin-bottom: 30px;
+}
+
+#textareaMensagem {
+    width: 22em;
+    height: 15em;
+    background: #c7c7c7;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #d21617;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:  768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+        margin-bottom: 100px;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+        width: 90%;
+    }
+
+}
